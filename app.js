@@ -48,6 +48,9 @@ document.getElementById('w-change-btn').addEventListener('touchstart',(e) => {
 function getWeather(){
     weather.getWeather()
         .then(res => ui.paint(res))
-        // .then(res =>console.log(res.current.last_updated))
+        // .then (function(res){
+        //     console.log(res.current)
+        //     ui.paint(res)
+        // })
         .catch(err=>console.log(err))
 }
