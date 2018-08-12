@@ -4,7 +4,7 @@ const ui = new UI;
 
 
 // Get weather saat DOM load
-document.addEventListener('DOMContentLoaded',getWeather())
+document.addEventListener('onload',getWeather())
 
 // weather.changeLocation('bandung');
 
