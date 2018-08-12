@@ -6,7 +6,7 @@ class Weather {
     }
 //fetch cuaca ddari API
     async getWeather (){
-        const response = await fetch(`http://api.apixu.com/v1/current.json?key=${this.apiKey}&q=${this.city}`)
+        const response = await fetch(`https://api.apixu.com/v1/current.json?key=${this.apiKey}&q=${this.city}`)
 
         const responseData = await response.json();
 
