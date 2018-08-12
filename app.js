@@ -3,10 +3,12 @@ const weather = new Weather("Padang");
 const ui = new UI;
 
 
+
 // Get weather saat DOM load
-document.addEventListener('DOMContentLoaded',getWeather())
+document.addEventListener('load',getWeather())
 
 // weather.changeLocation('bandung');
+
 
 
 function getWeather(){
