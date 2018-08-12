@@ -28,6 +28,20 @@ document.getElementById('w-change-btn').addEventListener('click',(e) => {
     $('#locModal').modal('hide');
 })
 
+document.getElementById('w-change-btn').addEventListener('touchstart',(e) => {
+    const city = document.getElementById('City').value;
+
+    //ganti lokasi
+    weather.changeLocation(city);
+
+    storage.setLocationData(city)
+    
+    //ambil getweather dan tampilkan ui kembali
+    getWeather();
+
+    //tutup modal bootstrap
+    $('#locModal').modal('hide');
+})
 
 
 
